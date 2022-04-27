@@ -1,0 +1,14 @@
+export const IMG_URL_TopCast = "https://www.themoviedb.org/t/p/w138_and_h175_face";
+export const IMG_URL_CardMovie = "https://www.themoviedb.org/t/p/w220_and_h330_face";
+export const IMG_URL_SocialMovie = "https://www.gravatar.com/avatar/96c2e0e4ac98450f9e8e3c0a0a40aad8.jpg?s=64";
+export const IMG_URL_ReadMore = "https://www.themoviedb.org/review/621d02856b5fc2006b954bab";
+export const IMG_URL_Banner = "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces";
+export const IMG_URL_Poster = "https://www.themoviedb.org/t/p//w300_and_h450_bestv2";
+export const IMG_URL_Backdrops = "https://www.themoviedb.org/t/p/w533_and_h300_bestv2";
+export const IMG_URL_Recommen = "https://www.themoviedb.org/t/p/w250_and_h141_face";
+export const IMG_URL_Contributors1 = "https://www.themoviedb.org/t/p/w45_and_h45_face/yYG7Rhn9HfFpssIMeNiDynvxC14.jpg";
+export const IMG_URL_Contributors2 = "https://www.themoviedb.org/t/p/w45_and_h45_face/lWHpCKSQR8W2ZDf9tRrjibEboxf.jpg";
+export const IMG_URL_Contributors3 = "https://www.themoviedb.org/t/p/w45_and_h45_face/oTPjql0MGIwRrg9RolefYaaPlAN.jpg";
+export const IMG_URL_Contributors4 = "https://www.themoviedb.org/t/p/w45_and_h45_face/9UhDsDZYJZdtiyPz5CCfiDgh0kk.jpg";
+export const IMG_URL_ViewCollection = "https://www.themoviedb.org/t/p/w1440_and_h320_multi_faces";
+export const IMG_URL_Youtube = "https://i.ytimg.com/vi/";
