@@ -33,7 +33,7 @@ const Popular: React.FC<ToDoProps> = ({ video, poster_1, poster_2 }) => {
             }}
           >
             <FontAwesomeIcon className={style.icons} icon={faCirclePlay} onClick={() => { setOpenModal(true) }} size="lg" fixedWidth />
-            {/* <ModalMovie key_id={video.key} show={openModal} handleSetModal={handleModal} /> */}
+            <ModalMovie key_id={video.key} show={openModal} handleSetModal={handleModal} />
           </div>
         </li>
         <li>

@@ -4,7 +4,7 @@ import style from './style.module.scss';
 type Props = {
     key_id: any,
     show: any,
-    handleSetModal: string,
+    handleSetModal: any,
 }
 
 const ModalMovie: React.FC<Props> = ({key_id, show, handleSetModal}) => {
@@ -19,7 +19,7 @@ const ModalMovie: React.FC<Props> = ({key_id, show, handleSetModal}) => {
                 <div className={style.playTrailer}>
                     <div className={style.title}>
                         Play Trailer
-                        <button onClick={handleModal} > X </button>
+                        <button onClick={handleSetModal} > X </button>
                     </div>
                 </div>
                 <div className={style.trailerYoutube}>

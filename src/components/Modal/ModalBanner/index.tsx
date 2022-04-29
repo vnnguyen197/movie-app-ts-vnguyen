@@ -7,7 +7,7 @@ interface Movie{
     Movie: Object,
 }
 
-const ModalBanner = ( closeBanner:any , props: any) => {
+const ModalBanner = ( props: any) => {
 
     const Movie = useAppSelector((state) => state);
     const banner = Movie.movies.detail;
@@ -21,7 +21,7 @@ const ModalBanner = ( closeBanner:any , props: any) => {
                 </div>
 
                 <div className={style.contentRight}>
-                    <div className={style.exit} onClick={() => closeBanner(false)}> X </div>
+                    <div className={style.exit} onClick={props.closeBanners}> X </div>
                     <h3 className={style.info}>Info
                         <FontAwesomeIcon className={style.icons} icon={faLock} />
 

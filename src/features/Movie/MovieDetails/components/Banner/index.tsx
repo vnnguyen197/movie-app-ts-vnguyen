@@ -7,6 +7,7 @@ import { useAppSelector } from 'app/hooks';
 import { IMG_URL_Banner, IMG_URL_Poster } from 'constants/movie';
 import styles from './style.module.css';
 import ModalBanner from 'components/Modal/ModalBanner';
+import ModalVideo from 'components/Modal/ModalVideo';
 
 interface ContactFormProps {
   setOpenBanner: (param: boolean) => boolean;
@@ -42,7 +43,7 @@ const Banner = (props: ContactFormProps) => {
         item?.job === "Screenplay" ||
         item?.job === "Characters" ||
         item?.job === "Writer" 
-    );
+    )  
 
     return newCast.map((item: any, index: number) => (
       <li className="profile" key={index}>
@@ -53,6 +54,12 @@ const Banner = (props: ContactFormProps) => {
       </li>
     ));
   };
+  const handleCloseBanner = () => {
+    setOpenBanner(!openBanner)
+  }
+  const handleCloseVideo = () => {
+    setOpenModal(!openModal)
+  }
 
   return (
     <div className={styles.mainBanner} id={props.id} >
@@ -88,7 +95,7 @@ const Banner = (props: ContactFormProps) => {
                     <a style={{ fontWeight: "600", }}>Watch Now</a>
                   </div>
                 </div>
-                 {openBanner && <ModalBanner closeBanners={setOpenBanner}/>} 
+                 {openBanner && <ModalBanner closeBanners={handleCloseBanner} />} 
               </div>
               <div className={styles.bannerRight}>
                 <div className={styles.header_poster}>
@@ -158,7 +165,7 @@ const Banner = (props: ContactFormProps) => {
                       {handleCrew(people)}
                     </ol>
                   </div>   
-                   {/* {openModal && <ModalVideo closeModal={setOpenModal} />}   */}
+                   {openModal && <ModalVideo closeModal={handleCloseVideo} />}  
                 </div>
               </div>
             </section>
