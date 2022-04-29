@@ -1,0 +1,19 @@
+.video_detail {
+    width: 480px;
+    height: 300px;
+    margin-left: -45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icons{
+      width: 67px;
+      height: 67px;
+      color: #ffffff;
+      border-radius: 50%;
+      &:hover {
+        cursor: pointer;
+        color: #ffffffe1;
+      }
+    }
+  }
+  

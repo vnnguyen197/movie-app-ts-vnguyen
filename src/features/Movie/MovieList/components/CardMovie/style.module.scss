@@ -1,0 +1,84 @@
+.card_movie {
+    border: 1px solid pink;
+    border-radius: 15px;
+    margin: 22px;
+    height: 470px;
+    // box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    .card_movie_content{
+        .card_movie_img {
+            position: relative;
+            .img img {
+                width: 250px;
+                height: 360px;
+                border-radius: 10px 10px 0 0;
+            }
+            .card_movie_percent {
+                position: absolute;
+                bottom: -15px;
+                left: 10px;
+                width: 30px;
+                height: 30px;
+                border: 3px solid yellowgreen;
+                background-color: #00131c;
+                border-radius: 50%;
+    
+                .percent {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: white;
+                    .icons {
+                        font-size: 6px;
+                        padding-bottom: 3px;
+                    }
+                }
+    
+            }
+    
+            .card_movie_option {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 20px;
+                height: 20px;
+                background-color: pink;
+                border-radius: 50%;
+                &:hover {
+                    background: violet;
+                    cursor: pointer;
+                }
+    
+                .option {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    font-size: 17px;
+                    color: rgba(0, 0, 0, 0.5);
+                }
+            }
+        }
+        .card_movie_content {
+            .items {
+                padding: 20px 0 0 10px;
+                color: black;
+                font-weight: bold;
+                word-wrap: normal;
+                width: 200px;
+                text-decoration: none;
+                &:hover {
+                    color: violet;
+                    cursor: pointer;
+                }
+            }
+            .day {
+                padding-left: 10px;
+                color: rgba(0, 0, 0, 0.6);
+                font-size: 14px;
+            }
+        }
+    }
+}

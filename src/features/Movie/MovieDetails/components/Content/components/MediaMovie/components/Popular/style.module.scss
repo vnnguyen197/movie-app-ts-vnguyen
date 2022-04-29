@@ -1,0 +1,44 @@
+.popular_detail {
+    ul {
+      list-style: none;
+      display: flex;
+      overflow: hidden;
+      overflow-x: scroll;
+      padding: 0;
+      margin-top: 0;
+      &::-webkit-scrollbar-thumb {
+        border-radius: 20px;
+        background-color: #cfcfcf;
+      }
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      &::-webkit-scrollbar {
+        height: 8px;
+        width: 8px;
+      }
+      .video_detail{
+        width: 480px;
+        height: 315px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          width: 480px;
+          height: 315px;
+        }
+        .icons{
+          width: 67px;
+          height: 67px;
+          color: #ffffff;
+          border-radius: 50%;
+          &:hover {
+            cursor: pointer;
+            color: #ffffffe1;
+          }
+        }
+      }
+    }
+  }
+  

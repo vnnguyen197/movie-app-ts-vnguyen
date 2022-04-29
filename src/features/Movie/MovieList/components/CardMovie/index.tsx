@@ -7,12 +7,20 @@ import {
     Link,
     useHistory
 } from "react-router-dom";
-import { IMG_URL_CardMovie } from 'constants';
+import { IMG_URL_CardMovie } from 'constants/movie';
 
-const CardMovie = ({ title, vote_average, release_date, poster_path, id}) => {
+type Props = {
+    title: string,
+    vote_average: number,
+    release_date: number,
+    poster_path: any,
+    id: number,
+};
+
+const CardMovie: React.FC<Props> = ({ title, vote_average, release_date, poster_path, id}) => {
 
     const history = useHistory();
-    const handleOnclick = (id) => {
+    const handleOnclick = (id: any) => {
         history.push(`/movie/${id}`)
     }
 

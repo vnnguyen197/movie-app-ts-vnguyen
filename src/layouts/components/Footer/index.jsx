@@ -1,6 +1,5 @@
 import styles from './style.module.scss';
-// import logo from 'assets/images/logo-footer.svg';
-import logo from '../../../assets/images/logo-footer.svg';
+import logo from 'assets/images/logo-footer.svg';
 
 const Index = () => {
     return (
