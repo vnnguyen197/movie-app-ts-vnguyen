@@ -1,0 +1,136 @@
+.ModalBanner {
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+
+    .ModalContent {
+        display: flex;
+        z-index: 100;
+        margin-top: 76px;
+        margin-left: 378px;
+
+        .imgLeft img {
+            width: 385px;
+            height: 600px;
+        }
+
+        .contentRight {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #ffffff;
+            color: black;
+            width: 335px;
+            height: 600px;
+            border-radius: 1px solid black;
+            padding: 0 20px;
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #e3e3e3;
+                padding-bottom: 14px;
+                margin-bottom: 7px;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: normal;
+            }
+
+            .form {
+                .primary {
+                    font-size: 13px;
+                    padding-bottom: 14px;
+                    margin-bottom: 7px;
+
+                    .icons {
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+
+                .heli {
+                    padding-bottom: 14px;
+                    margin-bottom: 7px;
+                }
+
+                .added,
+                .language,
+                .size {
+                    font-size: 13px; 
+                    padding-bottom: 5px;
+                }
+
+                .sizeBottom {
+                    padding-bottom: 14px;
+                    margin-bottom: 7px;
+                }
+
+                .option {
+                    width: 100%;
+                    height: 35px;
+                    background: #ffc0c094;
+                    border: 5px;
+                    border-radius: 5px;
+
+                    option {
+                        font-size: 14px;
+                        color: rgb(155, 48, 66);
+                        padding-left: 15px;
+                        padding-top: 10px;
+                    }
+                }
+            }
+
+            .exit {
+                position: relative;
+                top: -60px;
+                font-size: 20px;
+                font-weight: bold;
+                display: flex;
+                justify-content: flex-end;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+
+            .people {
+                font-size: 15px;
+                font-weight: none;
+
+                h4 {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #e3e3e3;
+                    padding-bottom: 14px;
+                    margin-bottom: 7px;
+                    font-size: 1em;
+                    font-weight: 400;
+                    white-space: normal;
+                }
+
+                .records {
+                    padding-bottom: 14px;
+                    margin-bottom: 7px;
+                }
+            }
+
+            .close {
+                .icons {
+                    font-size: 20px;
+                    padding-left: 320px;
+                    margin-bottom: -80px;
+                }
+            }
+        }
+    }
+}

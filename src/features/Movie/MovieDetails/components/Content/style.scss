@@ -1,0 +1,20 @@
+
+.content {
+    .content_wrapper {
+      .row {
+        flex-direction: row;
+        display: flex;
+        padding: 30px 40px;
+        .col_content {
+          padding: 0;
+        }
+      }
+      .col-10 {
+        width: 75%;
+      }
+      .col-2 {
+        width: 25%;
+      }
+    }
+  }
+  
