@@ -119,7 +119,7 @@ const Banner = (props: ContactFormProps) => {
                   <div className={styles.actions}>
                     <div className={styles.lists1}>
                       <div className={styles.items1}>
-                        <div className={styles.percent}>{detail.vote_average * 10}
+                        <div className={styles.percent}>{Math.round(detail.vote_average * 10)}
                           <FontAwesomeIcon className={styles.icons} icon={faPercent} />
                         </div>
                       </div>
